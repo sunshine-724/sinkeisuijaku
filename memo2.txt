@@ -1,0 +1,23 @@
+
+    /*マウスをクリックした場所のトランプをめくる*/
+    HgSetEventMask(HG_MOUSE_DOWN);  // 入力をマウスだけにする（ずっと）
+
+    for (;;) {
+        event = HgEvent();  // マウスクリックを待つ
+
+        x0 = event->x;  // クリックされたx座標を取り出す
+        y0 = event->y;  // クリックされたy座標を取り出す
+
+        /*カードをクリックしたらそのカードが反応するようにする*/
+        for (h = 0; h < 4; h++) {
+            for (i = 0; i < 13; i++) {
+                if ((cardx[h][i] <= x0 && x0 <= cardx[h][i] + 100) &&
+                    (cardy[h][i] <= y0 && y0 <= cardy[h][i] + 150)) {
+                    HgSetColor(HG_RED);
+                    HgBox(cardx[h][i], cardy[h][i], 100, 150);
+                }
+
+                // 柄を表示させる（ランダムに）
+            }
+        }
+    }

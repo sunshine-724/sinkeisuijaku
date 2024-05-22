@@ -1,0 +1,699 @@
+不要になったら削除してよし！
+
+
+case 0:
+                        /*ここから表示させたいイラストを出力する*/
+
+                        /*ダイヤモンド*/
+                        // ダイヤの１
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[0] + 30, y1[0] + 55, 40, 40, 0);
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[0] + 30, y1[0] + 95, 20, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[0] + 30, y1[0] + 55, 20, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[0] + 70, y1[0] + 55, 20, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[0] + 70, y1[0] + 95, 20, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの２
+                    case 1:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[1] + 40, y1[1] + 110, 20, 20,
+                                  0);                                  // 上
+                        HgBoxFill(x1[1] + 40, y1[1] + 20, 20, 20, 0);  // 下
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[1] + 40, y1[1] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[1] + 40, y1[1] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[1] + 60, y1[1] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[1] + 60, y1[1] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[1] + 40, y1[1] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[1] + 40, y1[1] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[1] + 60, y1[1] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[1] + 60, y1[1] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        break;
+
+                    // ダイヤの３
+                    case 2:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[2] + 40, y1[2] + 110, 20, 20,
+                                  0);  // 上
+                        HgBoxFill(x1[2] + 40, y1[2] + 65, 20, 20,
+                                  0);  // 真ん中
+                        HgBoxFill(x1[2] + 40, y1[2] + 20, 20, 20, 0);  // 下
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[2] + 40, y1[2] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[2] + 40, y1[2] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[2] + 60, y1[2] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[2] + 60, y1[2] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[2] + 40, y1[2] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[2] + 40, y1[2] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[2] + 60, y1[2] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[2] + 60, y1[2] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[2] + 40, y1[2] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[2] + 40, y1[2] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[2] + 60, y1[2] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[2] + 60, y1[2] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの4
+                    case 3:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[3] + 15, y1[3] + 110, 20, 20,
+                                  0);  // 左上
+                        HgBoxFill(x1[3] + 15, y1[3] + 20, 20, 20,
+                                  0);  // 左下
+                        HgBoxFill(x1[3] + 65, y1[3] + 20, 20, 20,
+                                  0);  // 右下
+                        HgBoxFill(x1[3] + 65, y1[3] + 110, 20, 20,
+                                  0);  // 右上
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[3] + 15, y1[3] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[3] + 15, y1[3] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[3] + 35, y1[3] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[3] + 35, y1[3] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[3] + 15, y1[3] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[3] + 15, y1[3] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[3] + 35, y1[3] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[3] + 35, y1[3] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[3] + 65, y1[3] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[3] + 65, y1[3] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[3] + 85, y1[3] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[3] + 85, y1[3] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[3] + 65, y1[3] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[3] + 65, y1[3] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[3] + 85, y1[3] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[3] + 85, y1[3] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの５
+                    case 4:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[4] + 15, y1[4] + 110, 20, 20,
+                                  0);  // 左上
+                        HgBoxFill(x1[4] + 15, y1[4] + 20, 20, 20,
+                                  0);  // 左下
+                        HgBoxFill(x1[4] + 40, y1[4] + 65, 20, 20,
+                                  0);  // 中心
+                        HgBoxFill(x1[4] + 65, y1[4] + 20, 20, 20,
+                                  0);  // 右下
+                        HgBoxFill(x1[4] + 65, y1[4] + 110, 20, 20,
+                                  0);  // 右上
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[4] + 15, y1[4] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[4] + 15, y1[4] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[4] + 35, y1[4] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[4] + 35, y1[4] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[4] + 15, y1[4] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[4] + 15, y1[4] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[4] + 35, y1[4] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[4] + 35, y1[4] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        // 中心
+                        HgFanFill(x1[4] + 40, y1[4] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[4] + 40, y1[4] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[4] + 60, y1[4] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[4] + 60, y1[4] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[4] + 65, y1[4] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[4] + 65, y1[4] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[4] + 85, y1[4] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[4] + 85, y1[4] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[4] + 65, y1[4] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[4] + 65, y1[4] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[4] + 85, y1[4] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[4] + 85, y1[4] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの6
+                    case 5:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[5] + 15, y1[5] + 110, 20, 20,
+                                  0);  // 左上
+                        HgBoxFill(x1[5] + 15, y1[5] + 65, 20, 20,
+                                  0);  // 左中心
+                        HgBoxFill(x1[5] + 15, y1[5] + 20, 20, 20,
+                                  0);  // 左下
+                        HgBoxFill(x1[5] + 65, y1[5] + 20, 20, 20,
+                                  0);  // 右下
+                        HgBoxFill(x1[5] + 65, y1[5] + 65, 20, 20,
+                                  0);  // 右中心
+                        HgBoxFill(x1[5] + 65, y1[5] + 110, 20, 20,
+                                  0);  // 右上
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[5] + 15, y1[5] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[5] + 15, y1[5] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[5] + 35, y1[5] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[5] + 35, y1[5] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[5] + 15, y1[5] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[5] + 15, y1[5] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[5] + 35, y1[5] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[5] + 35, y1[5] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[5] + 15, y1[5] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[5] + 15, y1[5] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[5] + 35, y1[5] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[5] + 35, y1[5] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[5] + 65, y1[5] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[5] + 65, y1[5] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[5] + 85, y1[5] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[5] + 85, y1[5] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[5] + 65, y1[5] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[5] + 65, y1[5] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[5] + 85, y1[5] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[5] + 85, y1[5] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[5] + 65, y1[5] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[5] + 65, y1[5] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[5] + 85, y1[5] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[5] + 85, y1[5] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの７
+                    case 6:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[6] + 15, y1[6] + 110, 20, 20,
+                                  0);  // 左上
+                        HgBoxFill(x1[6] + 15, y1[6] + 65, 20, 20,
+                                  0);  // 左中心
+                        HgBoxFill(x1[6] + 15, y1[6] + 20, 20, 20,
+                                  0);  // 左下
+                        HgBoxFill(x1[6] + 40, y1[6] + 87.5, 20, 20,
+                                  0);  // 上の中心
+                        HgBoxFill(x1[6] + 65, y1[6] + 20, 20, 20,
+                                  0);  // 右下
+                        HgBoxFill(x1[6] + 65, y1[6] + 65, 20, 20,
+                                  0);  // 右中心
+                        HgBoxFill(x1[6] + 65, y1[6] + 110, 20, 20,
+                                  0);  // 右上
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[6] + 15, y1[6] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[6] + 15, y1[6] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[6] + 35, y1[6] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[6] + 35, y1[6] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[6] + 15, y1[6] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[6] + 15, y1[6] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[6] + 35, y1[6] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[6] + 35, y1[6] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[6] + 15, y1[6] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[6] + 15, y1[6] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[6] + 35, y1[6] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[6] + 35, y1[6] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        // 中心の上
+                        HgFanFill(x1[6] + 40, y1[6] + 107.5, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[6] + 40, y1[6] + 87.5, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[6] + 60, y1[6] + 87.5, 10, 0.5 * M_PI,
+                                  M_PI, 0);  // 右下
+                        HgFanFill(x1[6] + 60, y1[6] + 107.5, 10, M_PI,
+                                  1.5 * M_PI, 0);  // 右上
+
+                        HgFanFill(x1[6] + 65, y1[6] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[6] + 65, y1[6] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[6] + 85, y1[6] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[6] + 85, y1[6] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[6] + 65, y1[6] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[6] + 65, y1[6] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[6] + 85, y1[6] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[6] + 85, y1[6] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[6] + 65, y1[6] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[6] + 65, y1[6] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[6] + 85, y1[6] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[6] + 85, y1[6] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの８
+                    case 7:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[7] + 15, y1[7] + 110, 20, 20,
+                                  0);  // 左上
+                        HgBoxFill(x1[7] + 15, y1[7] + 65, 20, 20,
+                                  0);  // 左中心
+                        HgBoxFill(x1[7] + 15, y1[7] + 20, 20, 20,
+                                  0);  // 左下
+                        HgBoxFill(x1[7] + 40, y1[7] + 87.5, 20, 20,
+                                  0);  // 上の中心
+                        HgBoxFill(x1[7] + 40, y1[7] + 42.5, 20, 20,
+                                  0);  // 下の中心
+                        HgBoxFill(x1[7] + 65, y1[7] + 20, 20, 20,
+                                  0);  // 右下
+                        HgBoxFill(x1[7] + 65, y1[7] + 65, 20, 20,
+                                  0);  // 右中心
+                        HgBoxFill(x1[7] + 65, y1[7] + 110, 20, 20,
+                                  0);  // 右上
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[7] + 15, y1[7] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[7] + 15, y1[7] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 35, y1[7] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[7] + 35, y1[7] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[7] + 15, y1[7] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[7] + 15, y1[7] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 35, y1[7] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[7] + 35, y1[7] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[7] + 15, y1[7] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[7] + 15, y1[7] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 35, y1[7] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[7] + 35, y1[7] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        // 中心(上下)
+                        HgFanFill(x1[7] + 40, y1[7] + 107.5, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[7] + 40, y1[7] + 87.5, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 60, y1[7] + 87.5, 10, 0.5 * M_PI,
+                                  M_PI, 0);  // 右下
+                        HgFanFill(x1[7] + 60, y1[7] + 107.5, 10, M_PI,
+                                  1.5 * M_PI, 0);  // 右上
+
+                        HgFanFill(x1[7] + 40, y1[7] + 62.5, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[7] + 40, y1[7] + 42.5, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 60, y1[7] + 42.5, 10, 0.5 * M_PI,
+                                  M_PI, 0);  // 右下
+                        HgFanFill(x1[7] + 60, y1[7] + 62.5, 10, M_PI,
+                                  1.5 * M_PI, 0);  // 右上
+
+                        HgFanFill(x1[7] + 65, y1[7] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[7] + 65, y1[7] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 85, y1[7] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[7] + 85, y1[7] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[7] + 65, y1[7] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[7] + 65, y1[7] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 85, y1[7] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[7] + 85, y1[7] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[7] + 65, y1[7] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[7] + 65, y1[7] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[7] + 85, y1[7] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[7] + 85, y1[7] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの9
+                    case 8:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[8] + 15, y1[8] + 110, 20, 20,
+                                  0);  // 左上
+                        HgBoxFill(x1[8] + 15, y1[8] + 80, 20, 20,
+                                  0);  // 左上から２番目
+                        HgBoxFill(x1[8] + 15, y1[8] + 50, 20, 20,
+                                  0);  // 左下から２番目
+                        HgBoxFill(x1[8] + 15, y1[8] + 20, 20, 20,
+                                  0);  // 左下
+                        HgBoxFill(x1[8] + 40, y1[8] + 65, 20, 20,
+                                  0);  // 中心
+                        HgBoxFill(x1[8] + 65, y1[8] + 20, 20, 20,
+                                  0);  // 右下
+                        HgBoxFill(x1[8] + 65, y1[8] + 50, 20, 20,
+                                  0);  // 右下から２番目
+                        HgBoxFill(x1[8] + 65, y1[8] + 80, 20, 20,
+                                  0);  // 右上から２番目
+                        HgBoxFill(x1[8] + 65, y1[8] + 110, 20, 20,
+                                  0);  // 右上
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[8] + 15, y1[8] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[8] + 15, y1[8] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 35, y1[8] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 35, y1[8] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[8] + 15, y1[8] + 100, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[8] + 15, y1[8] + 80, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 35, y1[8] + 80, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 35, y1[8] + 100, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[8] + 15, y1[8] + 70, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[8] + 15, y1[8] + 50, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 35, y1[8] + 50, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 35, y1[8] + 70, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[8] + 15, y1[8] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[8] + 15, y1[8] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 35, y1[8] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 35, y1[8] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        // 中心
+                        HgFanFill(x1[8] + 40, y1[8] + 85, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[8] + 40, y1[8] + 65, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 60, y1[8] + 65, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 60, y1[8] + 85, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[8] + 65, y1[8] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[8] + 65, y1[8] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 85, y1[8] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 85, y1[8] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[8] + 65, y1[8] + 70, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[8] + 65, y1[8] + 50, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 85, y1[8] + 50, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 85, y1[8] + 70, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[8] + 65, y1[8] + 100, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[8] + 65, y1[8] + 80, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 85, y1[8] + 80, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 85, y1[8] + 100, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[8] + 65, y1[8] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[8] + 65, y1[8] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[8] + 85, y1[8] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[8] + 85, y1[8] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+
+                    // ダイヤの10
+                    case 9:
+                        HgSetFillColor(HG_RED);
+                        HgBoxFill(x1[9] + 15, y1[9] + 110, 20, 20,
+                                  0);  // 左上
+                        HgBoxFill(x1[9] + 15, y1[9] + 80, 20, 20,
+                                  0);  // 左上から２番目
+                        HgBoxFill(x1[9] + 15, y1[9] + 50, 20, 20,
+                                  0);  // 左下から２番目
+                        HgBoxFill(x1[9] + 15, y1[9] + 20, 20, 20,
+                                  0);  // 左下
+                        HgBoxFill(x1[9] + 40, y1[9] + 87.5, 20, 20,
+                                  0);  // 上の中心
+                        HgBoxFill(x1[9] + 40, y1[9] + 42.5, 20, 20,
+                                  0);  // 下の中心
+                        HgBoxFill(x1[9] + 65, y1[9] + 20, 20, 20,
+                                  0);  // 右下
+                        HgBoxFill(x1[9] + 65, y1[9] + 50, 20, 20,
+                                  0);  // 右下から２番目
+                        HgBoxFill(x1[9] + 65, y1[9] + 80, 20, 20,
+                                  0);  // 右上から２番目
+                        HgBoxFill(x1[9] + 65, y1[9] + 110, 20, 20,
+                                  0);  // 右上
+
+                        HgSetFillColor(HG_WHITE);
+                        HgFanFill(x1[9] + 15, y1[9] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[9] + 15, y1[9] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 35, y1[9] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 35, y1[9] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[9] + 15, y1[9] + 100, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[9] + 15, y1[9] + 80, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 35, y1[9] + 80, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 35, y1[9] + 100, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[9] + 15, y1[9] + 70, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[9] + 15, y1[9] + 50, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 35, y1[9] + 50, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 35, y1[9] + 70, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[9] + 15, y1[9] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[9] + 15, y1[9] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 35, y1[9] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 35, y1[9] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        // 中心(上下)
+                        HgFanFill(x1[9] + 40, y1[9] + 107.5, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[9] + 40, y1[9] + 87.5, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 60, y1[9] + 87.5, 10, 0.5 * M_PI,
+                                  M_PI, 0);  // 右下
+                        HgFanFill(x1[9] + 60, y1[9] + 107.5, 10, M_PI,
+                                  1.5 * M_PI, 0);  // 右上
+
+                        HgFanFill(x1[9] + 40, y1[9] + 62.5, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[9] + 40, y1[9] + 42.5, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 60, y1[9] + 42.5, 10, 0.5 * M_PI,
+                                  M_PI, 0);  // 右下
+                        HgFanFill(x1[9] + 60, y1[9] + 62.5, 10, M_PI,
+                                  1.5 * M_PI, 0);  // 右上
+
+                        HgFanFill(x1[9] + 65, y1[9] + 40, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[9] + 65, y1[9] + 20, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 85, y1[9] + 20, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 85, y1[9] + 40, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[9] + 65, y1[9] + 70, 10, 1.5 * M_PI,
+                                  2 * M_PI, 0);  // 左上
+                        HgFanFill(x1[9] + 65, y1[9] + 50, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 85, y1[9] + 50, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 85, y1[9] + 70, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[9] + 65, y1[9] + 100, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[9] + 65, y1[9] + 80, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 85, y1[9] + 80, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 85, y1[9] + 100, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+
+                        HgFanFill(x1[9] + 65, y1[9] + 130, 10, 1.5 * M_PI,
+                                  2 * M_PI,
+                                  0);  // 左上
+                        HgFanFill(x1[9] + 65, y1[9] + 110, 10, 0, 0.5 * M_PI,
+                                  0);  // 左下
+                        HgFanFill(x1[9] + 85, y1[9] + 110, 10, 0.5 * M_PI, M_PI,
+                                  0);  // 右下
+                        HgFanFill(x1[9] + 85, y1[9] + 130, 10, M_PI, 1.5 * M_PI,
+                                  0);  // 右上
+                        break;
+                }
